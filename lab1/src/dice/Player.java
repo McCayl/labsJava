@@ -1,6 +1,6 @@
 package dice;
 
-public class Player {
+public class Player implements IPlayer{
     private String name;
     private int wins;
 
@@ -9,14 +9,17 @@ public class Player {
         this.wins = 0;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public int getWins() {
         return wins;
     }
 
+    @Override
     public void addWin() {
         this.wins++;
     }
